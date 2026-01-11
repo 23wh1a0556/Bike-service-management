@@ -23,3 +23,26 @@ The system is developed to help bike service centers manage customer details, se
 - Generate accurate service bills  
 
 ---
+## 2. System Overview
+
+### 2.1 User Roles
+
+| Role | Description |
+|-----|------------|
+| **Admin** | Manages users, services, spare parts, and billing |
+| **Staff** | Updates service status and spare part usage |
+| **Customer** | Views service details and billing information |
+
+### 2.2 Core Features
+- Customer and bike registration  
+- Service request management  
+- Service status tracking  
+- Spare parts inventory management  
+- Billing and invoice generation  
+- Low-stock alerts for spare parts  
+
+---
+
+## 3. High-Level Architecture
+
+### 3.1 System Architecture
