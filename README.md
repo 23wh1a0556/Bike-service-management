@@ -286,11 +286,11 @@ frontend/
 
 ## 11. Conclusion
 
-Bike-service-management provides a simple, efficient, and user-friendly platform for managing bike service operations and spare parts inventory. The system demonstrates real-world full-stack web application development, effective use of Node.js and MongoDB, and organized handling of service workflows and inventory management.
+**Bike-service-management** provides a simple, efficient, and user-friendly platform for managing bike service operations and spare parts inventory. The system demonstrates real-world full-stack web application development, effective use of Node.js and MongoDB, and organized handling of service workflows and inventory management.
 
 ---
 
-📌 **Project Name:** Bike-service-management
-📌 **Document Type:** SRS & Technical Documentation
-📌 **Database:** MongoDB
+📌 **Project Name:** Bike-service-management  
+📌 **Document Type:** README  
+📌 **Database:** MongoDB  
 ---
