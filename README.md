@@ -46,3 +46,37 @@ The system is developed to help bike service centers manage customer details, se
 ## 3. High-Level Architecture
 
 ### 3.1 System Architecture
+[ Frontend (HTML, CSS, JavaScript) ]
+                |
+            HTTP Requests
+                |
+      [ Backend (Node.js + Express) ]
+                |
+          [ Database (MongoDB) ]
+
+### 3.2 Architecture Principles
+- Client–Server Architecture  
+- RESTful API design  
+- Modular backend structure  
+- Separation of concerns  
+
+---
+
+## 4. Database Design
+
+### 4.1 Database Overview
+- **Database:** MongoDB  
+- **ODM:** Mongoose  
+- Data stored in collections  
+
+### 4.2 Collections
+
+#### 4.2.1 Users Collection
+```json
+{
+  "_id": "ObjectId",
+  "username": "string",
+  "password": "string",
+  "role": "admin | staff",
+  "createdAt": "Date"
+}
