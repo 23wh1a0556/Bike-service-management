@@ -1,85 +1,81 @@
 # Bike-service-management
-Bike Service & Spare Parts Management System
-1. Introduction
-1.1 Purpose
+## Bike Service & Spare Parts Management System
 
-This document describes the software requirements, system architecture, database design, and technical details of the Bike Service & Spare Parts Management System. The system is developed to help bike service centers manage customer details, service requests, spare parts inventory, and billing operations efficiently using a web-based application.
+---
 
-1.2 Target Audience
+## 1. Introduction
 
-Bike service center owners
+### 1.1 Purpose
+This document describes the software requirements, system architecture, database design, and technical details of the **Bike Service & Spare Parts Management System**.  
+The system is developed to help bike service centers manage customer details, service requests, spare parts inventory, and billing operations efficiently using a web-based application.
 
-Mechanics and service staff
+### 1.2 Target Audience
+- Bike service center owners  
+- Mechanics and service staff  
+- Customers using bike service facilities  
+- Students learning full-stack development  
+- Faculty evaluating academic projects  
 
-Customers using bike service facilities
+### 1.3 Objectives
+- Reduce manual record keeping  
+- Automate bike service management  
+- Track service status efficiently  
+- Manage spare parts inventory  
+- Generate accurate service bills  
 
-Students learning full-stack development
+---
 
-Faculty evaluating academic projects
+## 2. System Overview
 
-1.3 Objectives
+### 2.1 User Roles
 
-Reduce manual record keeping
+| Role | Description |
+|-----|------------|
+| **Admin** | Manages users, services, spare parts, and billing |
+| **Staff** | Updates service status and spare part usage |
+| **Customer** | Views service details and billing information |
 
-Automate bike service management
+### 2.2 Core Features
+- Customer and bike registration  
+- Service request management  
+- Service status tracking  
+- Spare parts inventory management  
+- Billing and invoice generation  
+- Low-stock alerts for spare parts  
 
-Track service status efficiently
+---
 
-Manage spare parts inventory
+## 3. High-Level Architecture
 
-Generate accurate service bills
-
-2. System Overview
-2.1 User Roles
-Role	Description
-Admin	Manages users, services, spare parts, and billing
-Staff	Updates service status and spare part usage
-Customer	Views service details and billing information
-2.2 Core Features
-
-Customer and bike registration
-
-Service request management
-
-Service status tracking
-
-Spare parts inventory management
-
-Billing and invoice generation
-
-Low-stock alerts for spare parts
-
-3. High-Level Architecture
-3.1 System Architecture
+### 3.1 System Architecture
 [ Frontend (HTML, CSS, JavaScript) ]
-                |
-            HTTP Requests
-                |
-      [ Backend (Node.js + Express) ]
-                |
-          [ Database (MongoDB) ]
+|
+HTTP Requests
+|
+[ Backend (Node.js + Express) ]
+|
+[ Database (MongoDB) ]
 
-3.2 Architecture Principles
 
-Client–Server Architecture
+### 3.2 Architecture Principles
+- Client–Server Architecture  
+- RESTful API design  
+- Modular backend structure  
+- Separation of concerns  
 
-RESTful API design
+---
 
-Modular backend structure
+## 4. Database Design
 
-Separation of concerns
+### 4.1 Database Overview
+- **Database:** MongoDB  
+- **ODM:** Mongoose  
+- Data stored in collections  
 
-4. Database Design
-4.1 Database Overview
+### 4.2 Collections
 
-Database: MongoDB
-
-ODM: Mongoose
-
-Data stored in collections
-
-4.2 Collections
-4.2.1 Users Collection
+#### 4.2.1 Users Collection
+```json
 {
   "_id": "ObjectId",
   "username": "string",
@@ -206,7 +202,7 @@ Billing Page
 
 7. Functional Requirements
 
-Admin must be able to manage services and spare parts
+Admin must manage services and spare parts
 
 Staff must update service status
 
@@ -245,6 +241,7 @@ Mobile application support
 Service reminders
 
 11. Conclusion
+
 Bike-service-management provides a simple, efficient, and user-friendly platform for managing bike service operations and spare parts inventory. The system demonstrates real-world full-stack web application development, effective use of Node.js and MongoDB, and organized handling of service workflows and inventory management.
 
 📌 Project Name: Bike-service-management
