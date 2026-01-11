@@ -80,3 +80,124 @@ The system is developed to help bike service centers manage customer details, se
   "role": "admin | staff",
   "createdAt": "Date"
 }
+
+### 3.2 Architecture Principles
+- Client–Server Architecture  
+- RESTful API design  
+- Modular backend structure  
+- Separation of concerns  
+
+---
+
+## 4. Database Design
+
+### 4.1 Database Overview
+- **Database:** MongoDB  
+- **ODM:** Mongoose  
+- Data stored in collections  
+
+### 4.2 Collections
+
+#### 4.2.1 Users Collection
+```json
+{
+  "_id": "ObjectId",
+  "username": "string",
+  "password": "string",
+  "role": "admin | staff",
+  "createdAt": "Date"
+}
+
+### 3.2 Architecture Principles
+- Client–Server Architecture  
+- RESTful API design  
+- Modular backend structure  
+- Separation of concerns  
+
+---
+
+## 4. Database Design
+
+### 4.1 Database Overview
+- **Database:** MongoDB  
+- **ODM:** Mongoose  
+- Data stored in collections  
+
+### 4.2 Collections
+
+#### 4.2.1 Users Collection
+```json
+{
+  "_id": "ObjectId",
+  "username": "string",
+  "password": "string",
+  "role": "admin | staff",
+  "createdAt": "Date"
+}
+4.2.2 Customers Collection
+{
+  "_id": "ObjectId",
+  "name": "string",
+  "phone": "string",
+  "address": "string"
+}
+4.2.3 Bikes Collection
+{
+  "_id": "ObjectId",
+  "customerId": "ObjectId",
+  "bikeModel": "string",
+  "bikeNumber": "string"
+}
+4.2.4 Services Collection
+{
+  "_id": "ObjectId",
+  "bikeId": "ObjectId",
+  "serviceType": "string",
+  "status": "Pending | In Progress | Completed",
+  "serviceDate": "Date"
+}
+4.2.5 Spare Parts Collection
+{
+  "_id": "ObjectId",
+  "partName": "string",
+  "price": "number",
+  "quantity": "number"
+}
+4.2.6 Billing Collection
+{
+  "_id": "ObjectId",
+  "serviceId": "ObjectId",
+  "totalAmount": "number",
+  "billDate": "Date"
+}
+5. Backend Design
+5.1 Technology Stack
+
+Node.js
+
+Express.js
+
+MongoDB
+
+Mongoose
+
+JWT Authentication
+
+5.2 Backend Folder Structure
+backend/
+│── controllers/
+│── models/
+│── routes/
+│── middleware/
+│── config/
+│── app.js
+│── package.json
+5.3 Authentication Flow
+
+User logs in using credentials
+
+Password verification
+
+JWT token generation
+
+Token validation for protected routes
